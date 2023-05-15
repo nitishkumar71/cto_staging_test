@@ -6,3 +6,6 @@ services:
     port: [ '8080:8080' ]
     domain: ""
     run: /ops/main
+    env:
+     static:
+        - AUTHOR=nitishkumar71
