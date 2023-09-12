@@ -2,4 +2,4 @@
 Testing Repo for DORA Metrics
 
 
-Test Posting DORA metrics as Github Comment
+Posting DORA metrics as Github Comment
