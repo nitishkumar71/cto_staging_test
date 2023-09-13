@@ -1,4 +1,4 @@
-name: Deployment Metrics
+name: Deployment Fail Metrics
 on:
   workflow_dispatch:
 jobs:
