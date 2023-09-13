@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Report Deployment Succeeded'
-        uses: cto-ai/action@ef01e83cedc4ba0c393865db1e126dfcf6f65498
+        uses: cto-ai/action@staging
         id: ctoai-action
         with:
           team_id: ${{ secrets.CTOAI_TEAM }}
           token: ${{ secrets.CTOAI_TOKEN }}
           event_name: "deployment"
-          event_action: "succeeded"
+          event_action: "success"
