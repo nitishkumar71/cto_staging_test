@@ -4,6 +4,7 @@ on:
 jobs:
   ctoai-metrics:
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: 'Report Deployment Success'
         run: |
