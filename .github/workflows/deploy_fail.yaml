@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Report Deployment Failed'
-        uses: cto-ai/action@480fa119cca2295840029c32e2d958fb62f49d42
+        uses: cto-ai/action@staging
         id: ctoai-action
         with:
           team_id: ${{ secrets.CTOAI_TEAM }}
