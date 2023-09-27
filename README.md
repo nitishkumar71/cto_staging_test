@@ -2,4 +2,4 @@
 Testing Repo for DORA Metrics
 
 
-Request DORA metrics as Github Comment using `/ops measure` 
+Request DORA metrics as Github Comment using `/ops measure` test
