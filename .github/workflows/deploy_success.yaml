@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Report Deployment Succeeded'
-        uses: cto-ai/action@staging
+        uses: cto-ai/action@PROD-3120
         id: ctoai-action
         with:
           team_id: ${{ secrets.CTOAI_TEAM }}
