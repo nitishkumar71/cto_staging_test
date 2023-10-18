@@ -13,8 +13,8 @@ func main() {
 
 	event := map[string]interface{}{
 		"event_name":   "deployment",
-		"event_action": "succeeded",
-		"branch":       "main",
+		"event_action": "success",
+		"branch":       "sdk_test",
 		"repo":         "nitishkumar71/cto_staging_test",
 	}
 
