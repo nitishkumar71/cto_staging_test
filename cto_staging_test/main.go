@@ -23,7 +23,7 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("Dummy Line")
+	fmt.Println("Dummy LIne")
 	http.HandleFunc("/", HelloServer)
 	http.ListenAndServe(":8080", nil)
 }
