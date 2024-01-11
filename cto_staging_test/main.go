@@ -14,7 +14,7 @@ func main() {
 	event := map[string]interface{}{
 		"event_name":   "deployment",
 		"event_action": "success",
-		"branch":       "commit_test",
+		"branch":       "test_commits",
 		"repo":         "nitishkumar71/cto_staging_test",
 	}
 
@@ -23,7 +23,7 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("DUmmy Line")
+	fmt.Println("Dummy Line")
 	http.HandleFunc("/", HelloServer)
 	http.ListenAndServe(":8080", nil)
 }
