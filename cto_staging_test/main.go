@@ -24,10 +24,20 @@ func main() {
 	}
 
 	fmt.Println("Dummy Line")
+	fmt.Println("Fibbo of 9: ", fibonacciDP(9))
 	http.HandleFunc("/", HelloServer)
 	http.ListenAndServe(":8080", nil)
 }
 
 func HelloServer(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello World!")
+}
+
+func fibonacciDP(n int) int {
+	f := make([]int, n+2)
+	f[0], f[1] = 0, 1
+	for i := 2; i <= n; i++ {
+		f[i] = f[i-1] + f[i-2]
+	}
+	return f[n]
 }
