@@ -25,6 +25,8 @@ func main() {
 
 	fmt.Println("Dummy Line")
 	http.HandleFunc("/", HelloServer)
+	http.HandleFunc("/shorten", ShortURLHandler)
+	http.HandleFunc("/redirect/", redirectURLHandler)
 	http.ListenAndServe(":8080", nil)
 }
 
